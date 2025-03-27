@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Support Kamala</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #001f3f; /* Democratic Blue */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .banner {
+            background-color: #003366;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #004080;
+            border-radius: 10px;
+        }
+        .article {
+            text-align: left;
+        }
+        .email-input input, .email-input button {
+            padding: 10px;
+            margin: 10px;
+        }
+        .success-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #28a745;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            animation: flash 1s ease-in-out;
+        }
+        @keyframes flash {
+            0% { background-color: #28a745; }
+            50% { background-color: #50d170; }
+            100% { background-color: #28a745; }
+        }
+    </style>
+    <script>
+        function submitEmail() {
+            let emailInput = document.querySelector('input[type="email"]');
+            emailInput.value = '';
+            let popup = document.getElementById('success-popup');
+            popup.style.display = 'block';
+            setTimeout(() => { popup.style.display = 'none'; }, 2000);
+        }
+    </script>
+</head>
+<body>
+    <div class="banner">
+        <h1>Support Kamala</h1>
+    </div>
+    <div class="content">
+        <p>Submit your email and donations today!</p>
+        <div class="email-input">
+            <input type="email" placeholder="Enter your email">
+            <button onclick="submitEmail()">Join Us</button>
+        </div>
+        <div id="success-popup" class="success-popup">Success!</div>
+        <div class="article">
+            <h2>Joe Biden: The Man, The Myth, The Economic Powerhouse</h2>
+            <p>Under President Biden’s administration, gas prices have miraculously fluctuated between $2 and the price of a small island. Inflation? A mere illusion created by rogue economists who simply don’t understand the genius of "Bidenomics."</p>
+            <p>Thanks to bold initiatives, the national debt has not only vanished but is now generating passive income through an exclusive White House OnlyFans subscription. Infrastructure? Every pothole has been personally inspected by Biden himself, leading to an unexpected boom in presidential selfies with disgruntled commuters.</p>
+            <p>Foreign policy has also reached new heights. International tensions have been replaced with Biden’s signature "Hey, folks!" diplomacy, leading to unexpected peace deals, including Russia agreeing to switch to solar power and North Korea opening its first Starbucks.</p>
+            <p>Truly, we are witnessing a golden age—one where reality is merely a suggestion and Biden’s aviator sunglasses hold the power of economic stability. Stay tuned for the next historic milestone: converting the White House into a TikTok house to engage Gen Z voters.</p>
+        </div>
+    </div>
+</body>
+</html>
